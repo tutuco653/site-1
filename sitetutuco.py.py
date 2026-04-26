@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 
 # Título do seu site
 st.title("Verificador de Fases da Vida 🧬")
@@ -33,5 +34,13 @@ elif idade <= 150:
 
 else:
     st.write("voce ja virou po, nem existe")
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4581971001324805"
+
+# --- ÁREA DA PROPAGANDA (CONSERTADA) ---
+# Colocamos o código dentro do components.html para o Python não dar erro
+components.html(
+    """
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4581971001324805"
      crossorigin="anonymous"></script>
+    """,
+    height=150,
+)
