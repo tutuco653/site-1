@@ -33,3 +33,5 @@ elif idade <= 150:
 
 else:
     st.write("voce ja virou po, nem existe")
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4581971001324805"
+     crossorigin="anonymous"></script>
