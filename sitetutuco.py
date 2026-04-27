@@ -40,10 +40,5 @@ else:
 
 # --- ÁREA DA PROPAGANDA (CONSERTADA) ---
 # Colocamos o código dentro do components.html para o Python não dar erro
-components.html(
-    """
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4581971001324805"
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4581971001324805"
      crossorigin="anonymous"></script>
-    """,
-    height=150,
-)
