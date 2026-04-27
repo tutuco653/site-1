@@ -1,12 +1,10 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-# Configuração inicial
 st.set_page_config(page_title="Fases da Vida", layout="centered")
 
 st.title("Verificador de Fases da Vida 🧬")
 
-# Entrada de dados - Guardando na variável 'idade'
 idade = st.number_input("Qual sua idade?", min_value=0, max_value=150, value=18)
 
 # Lógica das fases
@@ -33,9 +31,6 @@ else:
 
 st.divider()
 
-# Bloco do AdSense - Usei o seu ID de editor que você passou
-# IMPORTANTE: Se o erro persistir, apague as linhas abaixo (do 'components.html')
-# para testar se o problema é o script do Google.
 components.html(
     """
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4581971001324005"
