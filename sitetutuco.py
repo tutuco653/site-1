@@ -1,49 +1,46 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-# Título do seu site
+# Configuração inicial
+st.set_page_config(page_title="Fases da Vida", layout="centered")
+
 st.title("Verificador de Fases da Vida 🧬")
 
-# Entrada de idade
+# Entrada de dados - Guardando na variável 'idade'
 idade = st.number_input("Qual sua idade?", min_value=0, max_value=150, value=18)
 
+# Lógica das fases
 if idade <= 3:
-    st.write("Você é um/a bebê, não consegue fazer nada sozinho/a e depende dos seus pais.")
+    st.write("Você é um/a bebê, depende dos seus pais.")
 elif idade <= 5:
     st.write("Você é criancinha, ainda não começou o ensino fundamental 1.")
 elif idade <= 7:
-    st.write("Você é criança, já começou o ensino fundamental mas não consegue se virar sozinho/a.")
+    st.write("Você é criança, já começou o ensino fundamental.")
 elif idade <= 12:
-    st.write("Você é criança, já consegue se virar sozinho/a um pouco.")
+    st.write("Você é criança, já consegue se virar um pouco.")
 elif idade <= 16:
-    st.write("Você é adolescente, consegue se virar sozinho, mas ainda precisa dos pais.")
+    st.write("Você é adolescente, mas ainda precisa dos pais.")
 elif idade <= 30:
-    st.write("Você é adulto/a, já trabalha e tem que pagar as contas, talvez faz faculdade.")
+    st.write("Você é adulto/a, já trabalha e paga contas.")
 elif idade <= 60:
-    st.write("Você é adulto/a, já trabalha e tem que pagar as contas, talvez tenha filhos.")
+    st.write("Você é adulto/a, talvez tenha filhos.")
 elif idade <= 99:
-    st.write("Você é velho/a, você já está com dor na lombar e joga bingo.")
+    st.write("Você é velho/a, talvez tenha dor na lombar.")
 elif idade <= 150:
     st.write("Você é um/a esqueleto/a.")
 else:
-    st.write("Você já virou pó, nem existe.")
+    st.write("Você já virou pó.")
 
-# --- ESPAÇO PARA O ANÚNCIO ---
-st.write("---") # Uma linha para separar o conteúdo do anúncio
+st.divider()
+
+# Bloco do AdSense - Usei o seu ID de editor que você passou
+# IMPORTANTE: Se o erro persistir, apague as linhas abaixo (do 'components.html')
+# para testar se o problema é o script do Google.
 components.html(
     """
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4581971001324005"
      crossorigin="anonymous"></script>
-    
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-4581971001324005"
-         data-ad-slot="SEU_NUMERO_DE_SLOT_AQUI"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-         
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+    <div style="text-align: center; color: gray; font-size: 12px;">Publicidade</div>
     """,
-    height=300, # Aumentei a altura para o anúncio não ser cortado
+    height=100
+)
