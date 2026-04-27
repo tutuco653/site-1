@@ -22,8 +22,11 @@ elif idade <= 12:
 
 elif idade <= 16:
     st.write("voce e adolecente, consegue se virar sozinho, mas ainda precisa dos pais")
-
-elif idade <= 50:
+    
+elif idade <= 30:
+    st.write("voce e adulto/a, ja trabalha e tem que pagar as contas, talves faz faculdade e talvez tem filhos
+             
+elif idade <= 60:
     st.write("voce e adulto/a, ja trabalha e tem que pagar as contas, talves voce esteja na faculdade")
 
 elif idade <= 99:
