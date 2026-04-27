@@ -38,7 +38,11 @@ elif idade <= 150:
 else:
     st.write("voce ja virou po, nem existe")
 
-# --- ÁREA DA PROPAGANDA (CONSERTADA) ---
-# Colocamos o código dentro do components.html para o Python não dar erro
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4581971001324805"
+# Use o componente para renderizar o HTML da propaganda
+components.html(
+    """
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4581971001324005"
      crossorigin="anonymous"></script>
+    """,
+    height=100
+)
